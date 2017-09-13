@@ -1,0 +1,20 @@
+{
+  "name": "arduino-clock",
+  "version": "1.0.0",
+  "description": "arduino project",
+  "main": "index.js",
+  "scripts": {
+    "upload": "/home/jhovany/Descargas/arduino-1.8.4/arduino --upload helloworld.ino",
+    "build": "/home/jhovany/Descargas/arduino-1.8.4/arduino --verify helloworld.ino",
+    "monitor":"python monitor.py",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "arduino",
+    "cpp",
+    "c++"
+  ],
+  "author": "Jhovany Morales Bruno @brunoJhovany (jhovanymb.info@gmail.com)",
+  "license": "MIT",
+  "devDependencies": {}
+}
