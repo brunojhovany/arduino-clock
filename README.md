@@ -6,8 +6,8 @@
     * Necesitaras instalar el modulo de python `$ pip install pyserial`
     * Si deseas modificar el archivo de python que establece la comununicación serial encontraras mas información aquí [monitor.py](https://pybonacci.es/2014/01/19/leer-datos-de-arduino-desde-python/ "Title")
 
-    :::python
-        import serial
+  ```python
+        import serial
         arduino = serial.Serial('/dev/ttyACM0', baudrate=9600, timeout=0.7)
         print("Welcome to arduino-serialpy")
         while True:
@@ -16,8 +16,8 @@
               print(line)
           except KeyboardInterrupt:
               print("Exiting")
-              break
-
+              break
+```
 
 ## Libreria time para arduino
   ##### [TimeLib](https://github.com/PaulStoffregen/Time)
