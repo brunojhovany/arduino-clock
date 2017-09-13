@@ -4,20 +4,21 @@
   * Habilitar el puerto para poder usarlo :`$ sudo chmod 777 /dev/ttyACM0`
   #### Si deseas utilizar el minitor serial con python
     * Necesitaras instalar el modulo de python `$ pip install pyserial`
-    * Si deseas modificar el archivo de python que establece la comununicación serial encontraras mas información aquí [monitor.py](https://pybonacci.es/2014/01/19/leer-datos-de-arduino-desde-python/ "Title")
-        ```python
-          #Basic configuration
-          import serial
-          arduino = serial.Serial('/dev/ttyACM0', baudrate=9600, timeout=0.7)
-          print("Welcome to arduino-serialpy")
-          while True:
-            try:
-              line = arduino.readline()
-              print(line)
-            except KeyboardInterrupt:
-              print("Exiting")
-              break
-        ```
+    * Si deseas modificar el archivo de python que establece la comununicación serial encontraras mas información aquí [monitor.py](https://pybonacci.es/2014/01/19/leer-datos-de-arduino-desde-python/)
+        
+  ```python
+  #Basic configuration
+  import serial
+  arduino = serial.Serial('/dev/ttyACM0', baudrate=9600, timeout=0.7)
+  print("Welcome to arduino-serialpy")
+  while True:
+   try:
+    line = arduino.readline()
+    print(line)
+   except KeyboardInterrupt:
+    print("Exiting")
+    break
+   ```
 
 ## Libreria time para arduino
   ##### More information => [TimeLib](https://github.com/PaulStoffregen/Time)
